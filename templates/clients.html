@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+<html>
+<head>
+    <title>Clients - Salon Unique</title>
+</head>
+<body>
+    <h1>Clients</h1>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Customer Since</th>
+            <th>Service Request</th>
+        </tr>
+        {% for client in clients %}
+        <tr>
+            <td>{{ client[1] }}</td>
+            <td>{{ client[2] }}</td>
+            <td>{{ client[3] }}</td>
+            <td>{{ client[4] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

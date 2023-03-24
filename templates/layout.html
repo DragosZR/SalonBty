@@ -1,0 +1,16 @@
+<html>
+<head>
+  {% if title %}
+    <title>{{ title }}</title>
+  {% else %}
+    <title>Salon Unique</title>
+  {% endif %}
+</head>
+<body>
+  <div class="title">Salon Unique</div>
+  <hr/>
+  {% block content %}{% endblock %}
+  <hr/>
+  Copyright Salon Unique SRL
+</body>
+</html>
